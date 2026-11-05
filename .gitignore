@@ -1,0 +1,14 @@
+# Archivos temporales de LaTeX
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# main.pdf SI se sube (lo exige la guía)
