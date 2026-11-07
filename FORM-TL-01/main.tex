@@ -35,26 +35,26 @@
 \textbf{Código} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{Producto o proceso} & \textbf{Sistema o software} & \textbf{Justificación} \\
 \hline
 \endhead
-E01 & El paciente podrá reservar una cita eligiendo especialidad, médico, fecha y hora entre los horarios disponibles. & & & & \\ \hline
-E02 & La plataforma enviará al paciente un recordatorio por mensaje de texto 24 horas antes de su cita. & & & & \\ \hline
-E03 & La aplicación debe ser rápida. & & & & \\ \hline
-E04 & El recepcionista podrá registrar la llegada del paciente que se acerca a la ventanilla. & & & & \\ \hline
-E05 & La plataforma se desarrollará en Java 21 con base de datos PostgreSQL, tecnologías que domina el área de TI. & & & & \\ \hline
-E06 & El médico podrá consultar la lista de pacientes del día y marcar cada consulta como atendida. & & & & \\ \hline
-E07 & Los datos de salud de los pacientes deben estar seguros. & & & & \\ \hline
-E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & & & & \\ \hline
-E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & & & & \\ \hline
-E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & & & & \\ \hline
-E11 & El proyecto debe entregarse en un plazo máximo de seis meses. & & & & \\ \hline
-E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & & & & \\ \hline
-E13 & El quiosco de la sala de espera leerá el número de cédula ingresado en su pantalla táctil e imprimirá un ticket con el número de turno. & & & & \\ \hline
-E14 & La plataforma debe estar siempre disponible. & & & & \\ \hline
-E15 & El director médico podrá generar un reporte mensual de inasistencias por especialidad. & & & & \\ \hline
-E16 & Cada incremento se validará con el director médico al final de cada iteración de dos semanas. & & & & \\ \hline
-E17 & El tratamiento de los datos personales de los pacientes debe cumplir la Ley Orgánica de Protección de Datos Personales del Ecuador. & & & & \\ \hline
-E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & & & & \\ \hline
-E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & & & & \\ \hline
-E20 & Todo cambio en el código fuente será revisado por otro integrante del equipo antes de integrarse a la rama principal. & & & & \\ \hline
+E01 & El paciente podrá reservar una cita eligiendo especialidad, médico, fecha y hora entre los horarios disponibles. & Funcional & Producto & Software & Describe una acción que el paciente realiza en la plataforma. \\ \hline
+E02 & La plataforma enviará al paciente un recordatorio por mensaje de texto 24 horas antes de su cita. & Funcional & Producto & Sistema & Es una acción de la plataforma, pero el SMS depende de un servicio externo de mensajería. \\ \hline
+E03 & La aplicación debe ser rápida. & Calidad: eficiencia de desempeño & Producto & Sistema & Habla de qué tan rápido responde, no de qué hace. Es vago porque no dice cuánto es rápido. \\ \hline
+E04 & El recepcionista podrá registrar la llegada del paciente que se acerca a la ventanilla. & Funcional & Producto & Software & Es una acción que el recepcionista hace en el sistema. \\ \hline
+E05 & La plataforma se desarrollará en Java 21 con base de datos PostgreSQL, tecnologías que domina el área de TI. & Restricción tecnológica & Producto & Software & Impone el lenguaje y la base de datos; no es algo que el sistema haga. \\ \hline
+E06 & El médico podrá consultar la lista de pacientes del día y marcar cada consulta como atendida. & Funcional & Producto & Software & Indica dos acciones del médico: consultar la lista y marcar la consulta. \\ \hline
+E07 & Los datos de salud de los pacientes deben estar seguros. & Calidad: seguridad (confidencialidad) & Producto & Sistema & Pide proteger los datos, pero «seguros» no se puede medir ni verificar. \\ \hline
+E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & Restricción de plataforma & Producto & Software & Fija la plataforma mínima en la que debe funcionar la aplicación. \\ \hline
+E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & Funcional (regla de negocio) & Producto & Software & Define cómo debe actuar el sistema cuando se cancela tarde una cita. \\ \hline
+E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & Calidad: capacidad de interacción (accesibilidad) & Producto & Sistema & Habla de la facilidad de uso, pero «fácil» no es medible. \\ \hline
+E11 & El proyecto debe entregarse en un plazo máximo de seis meses. & Restricción temporal & Proceso & No aplica (proyecto) & Es un plazo del proyecto, no una característica del sistema. \\ \hline
+E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & Calidad: seguridad (autenticidad) & Producto & Software & Protege la cuenta del usuario y ya trae un valor medible (10 minutos). \\ \hline
+E13 & El quiosco de la sala de espera leerá el número de cédula ingresado en su pantalla táctil e imprimirá un ticket con el número de turno. & Funcional & Producto & Sistema & Necesita hardware: la pantalla táctil y la impresora del quiosco. \\ \hline
+E14 & La plataforma debe estar siempre disponible. & Calidad: fiabilidad (disponibilidad) & Producto & Sistema & Pide que el servicio no se caiga, pero «siempre» no es alcanzable ni medible. \\ \hline
+E15 & El director médico podrá generar un reporte mensual de inasistencias por especialidad. & Funcional & Producto & Software & Es un reporte que el director médico puede generar. \\ \hline
+E16 & Cada incremento se validará con el director médico al final de cada iteración de dos semanas. & Restricción de proceso & Proceso & No aplica (proyecto) & Describe cómo se valida el trabajo del equipo durante el desarrollo. \\ \hline
+E17 & El tratamiento de los datos personales de los pacientes debe cumplir la Ley Orgánica de Protección de Datos Personales del Ecuador. & Restricción legal & Producto & Sistema & Obliga a cumplir la LOPDP en todo el tratamiento de los datos. \\ \hline
+E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & Calidad: compatibilidad (interoperabilidad) & Producto & Sistema & Depende de otro sistema que ya existe; «sin problemas» no es verificable. \\ \hline
+E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & Calidad: fiabilidad (recuperabilidad) & Producto & Sistema & Habla de recuperarse ante una falla del servidor y ya tiene métrica (30 minutos). \\ \hline
+E20 & Todo cambio en el código fuente será revisado por otro integrante del equipo antes de integrarse a la rama principal. & Restricción de proceso & Proceso & No aplica (proyecto) & Es una práctica del equipo de desarrollo, no algo que haga la plataforma. \\ \hline
 \end{longtable}
 
 % ---------------------------------------------------------------
@@ -70,11 +70,11 @@ E20 & Todo cambio en el código fuente será revisado por otro integrante del eq
 \textbf{N.\textsuperscript{o}} & \textbf{Enunciado vago} & \textbf{Requisito cuantificado} & \textbf{Característica ISO/IEC 25010} & \textbf{Métrica y umbral} \\
 \hline
 \endhead
-1 & & & & \\ \hline
-2 & & & & \\ \hline
-3 & & & & \\ \hline
-4 & & & & \\ \hline
-5 & & & & \\ \hline
+1 & La aplicación debe ser rápida (E03). & El sistema deberá mostrar los horarios disponibles de un médico en menos de 2 segundos para el 95\,\% de las consultas, con 200 usuarios conectados a la vez. & Eficiencia de desempeño (comportamiento temporal) & Tiempo de respuesta, percentil 95, menor a 2 s con 200 usuarios. \\ \hline
+2 & Los datos de salud deben estar seguros (E07). & El sistema deberá permitir el acceso a los datos de salud de un paciente solo a su médico tratante, y registrar el 100\,\% de esos accesos con usuario, fecha y hora. & Seguridad (confidencialidad y responsabilidad) & 0 accesos no autorizados en la prueba de penetración; 100\,\% de accesos registrados. \\ \hline
+3 & La plataforma debe ser fácil de usar para adultos mayores (E10). & Un paciente de 60 años o más que usa la plataforma por primera vez deberá poder reservar una cita sin ayuda en menos de 3 minutos. & Capacidad de interacción (aprendizaje y accesibilidad) & Menos de 3 min sin ayuda en al menos el 90\,\% de los participantes de la prueba. \\ \hline
+4 & La plataforma debe estar siempre disponible (E14). & El sistema deberá tener una disponibilidad mensual mínima del 99,5\,\% en horario de 24 horas, sin contar los mantenimientos avisados con 48 horas de anticipación. & Fiabilidad (disponibilidad) & Disponibilidad mensual $\geq$ 99,5\,\%. \\ \hline
+5 & Debe integrarse sin problemas con el sistema de facturación (E18). & El sistema deberá enviar al sistema de facturación actual los datos de cada consulta atendida en menos de 5 minutos, sin perder ningún registro. & Compatibilidad (interoperabilidad) & Envío en menos de 5 min; 0 registros perdidos en una prueba de 1\,000 envíos. \\ \hline
 \end{longtable}
 
 % ---------------------------------------------------------------
@@ -98,12 +98,11 @@ Compañero con quien se comparó: % escribir el nombre
 % ---------------------------------------------------------------
 \section{Uso de IA como apoyo}
 
-% Completar con la verdad: herramienta, versión, propósito y cómo se verificó lo obtenido.
 
 \begin{itemize}
-  \item \textbf{Herramienta y versión:}
-  \item \textbf{Propósito:}
-  \item \textbf{Verificación:}
+  \item \textbf{Herramienta y versión:} Claude (Anthropic), modelo Claude Opus 5.5, usado desde Claude Code.
+  \item \textbf{Propósito:} crear la estructura del repositorio, la plantilla LaTeX y el README; transcribir los 20 enunciados; proponer la clasificación de la Tabla~\ref{tab:clasificacion} y los cinco requisitos cuantificados de la Tabla~\ref{tab:cuantificados}.
+  \item \textbf{Verificación:} % completar: cómo revisaste cada clasificación (por ejemplo, con las definiciones de IEEE 29148 y las características de ISO/IEC 25010:2023)
 \end{itemize}
 
 % ---------------------------------------------------------------
