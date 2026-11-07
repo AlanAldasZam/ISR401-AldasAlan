@@ -9,7 +9,7 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 
 - E03 se asigna al software; el alcance de sistema se explica cuando hay infraestructura, servicios externos o hardware.
 - E10 usa capacidad de interacción e inclusividad de la edición 2023. E12 es funcional y contribuye a seguridad.
-- E08 permanece como restricción de entorno, con relación secundaria a adaptabilidad. E19 conserva recuperabilidad y explicita RPO cero.
+- E08 permanece como restricción de entorno, con relación secundaria a adaptabilidad. E19 conserva recuperabilidad y exige no perder citas confirmadas.
 - Se añaden cinco propuestas con métricas, umbrales, muestras, condiciones y reglas de fallo. No se ejecutaron esas pruebas de una plataforma médica: la tarea consiste en especificarlas.
 - Se sustituyó nocite por citas efectivas. Se retiró Pohl sin validar y se enlazaron fichas oficiales de ISO. Se contrastó la terminología con la vista previa pública del organismo GSO, adopción de ISO/IEC 25010:2023; no se consultó el texto comercial íntegro.
 - La comparación con compañero está pendiente, sin nombres, discrepancias ni acuerdos ficticios. La declaración de IA requiere revisión y firma personal.
@@ -19,10 +19,10 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-be5acf5ee5094f0937d409e21f6134404d809636975bdb28f6ffc2ea7fb7e337
+00ceb6c52ec6c6f6eec708b0c34471a70b1bbdba4ef9ed82dc8d7d627fafeb8c
 
 SHA-256 de comprobante_SGA.pdf:
-ee5de224f8c4281ae73c0db566cd4df2049ae651a56bf41888bf086af7f0f28f
+2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
 
 La reproducción comprobada depende de conservar Tectonic 0.17.0 y las mismas dependencias en caché. No se garantiza identidad binaria entre versiones, sistemas operativos o distribuciones. pdfLaTeX no estaba instalado y no se presenta como probado.
 
@@ -31,3 +31,15 @@ Los registros finales no contienen referencias indefinidas ni cajas desbordadas.
 main.pdf: 5 páginas. comprobante_SGA.pdf: 1 página. Se inspeccionaron todas las páginas renderizadas. El Word fue exportado a PDF con Microsoft Word instalado e inspeccionado visualmente en una página; el renderizador de la habilidad no pudo ejecutarse por ausencia de LibreOffice. El PDF de inspección del Word no forma parte de la entrega.
 
 El comprobante es una ficha para adjuntar, no un recibo del SGA. No se accedió al SGA ni se realizó allí una entrega.
+
+## Revisión con las capturas del caso
+
+Se ajustaron las propuestas a 300 usuarios simultáneos, 12000 pacientes y 24 médicos. Se retiró la referencia a historias clínicas del requisito de seguridad porque su digitalización queda fuera del alcance. Se mantuvo la emisión de facturas en el sistema existente y se simplificó la redacción. Los veinte enunciados se conservaron del repositorio; las capturas aportan contexto, pero no muestran su tabla completa.
+
+Los hashes anteriores corresponden a la versión actualizada, compilada en dos carpetas nuevas sin red y revisada visualmente. La guía muestra cierre el 31 de octubre y el estudiante indicó el 7 de noviembre; no se ha verificado una prórroga. El apartado completo sobre uso de IA no aparece en las capturas y la declaración no se presenta como validada por el docente.
+
+Se simplificó el comprobante a los datos informativos y la URL. El detalle del contenido y de la comparación pendiente permanece en README.md y en el taller. Se repitieron las dos compilaciones limpias sin red con resultados idénticos.
+
+Por solicitud del estudiante se retiraron modalidad y fechas del comprobante. Se mantienen los datos básicos y la URL; las fechas y la discrepancia del plazo siguen documentadas en README.md. Esta versión también se compiló dos veces sin red con PDF idénticos y mantiene una página.
+
+Se actualizó la URL del comprobante tras confirmar el cambio de usuario a AlanAldasZam. El PDF sigue en una página y se reprodujo de forma idéntica en dos compilaciones limpias sin red.

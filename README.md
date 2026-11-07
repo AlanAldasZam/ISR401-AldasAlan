@@ -1,5 +1,7 @@
 # ISR401-AldasAlan
 
+Repositorio: https://github.com/AlanAldasZam/ISR401-AldasAlan
+
 Repositorio personal de Alan Andrés Aldas Zambrano para Ingeniería de Requerimientos (ISR-401), UTEQ, 4.º nivel, paralelo A, período 2026-2027.
 
 ## FORM-TL-01
@@ -56,3 +58,15 @@ La referencia original de Pohl se retiró porque sus datos no se habían verific
 Completar la comparación real, revisar y firmar la declaración de IA y volver a compilar el taller. Después adjuntar el comprobante en el SGA siguiendo la guía del docente y conservar el recibo que emita el sistema. El cierre indicado en la consigna es el 7 de noviembre de 2026.
 
 Para compilación limpia con fecha técnica fija y cálculo de hashes: `powershell -File FORM-TL-01/compilar.ps1`; añadir `-Offline` para usar solo caché. El parámetro `-Tectonic` acepta la ruta al ejecutable 0.17.0. El script conserva sus registros en la carpeta temporal indicada al terminar.
+
+## Ajustes con la guía del caso
+
+Se adaptaron las propuestas al pico previsto de 300 usuarios, los 12000 pacientes, los 24 médicos y el uso de Android de gama media o baja. La protección se refiere a datos de la plataforma de citas: no incluye historias clínicas electrónicas. La facturación continúa en el sistema existente.
+
+La guía adjunta indica cierre el 31 de octubre de 2026 a las 23:59. El estudiante indicó el 7 de noviembre de 2026; no se ha verificado una ampliación del plazo. Confirmar la fecha vigente en el SGA o con el docente.
+
+## Contenido del taller y estado académico
+
+El taller incluye la clasificación de 20 enunciados, sus justificaciones, cinco propuestas de requisitos de calidad medibles y referencias bibliográficas. Las fuentes están en FORM-TL-01/main.tex y referencias.bib; el documento compilado es main.pdf. La declaración de uso de IA está en un Word separado.
+
+Está pendiente comparar con un compañero y registrar las discrepancias o acuerdos reales en la plantilla del taller. El comprobante contiene únicamente los datos informativos y el enlace al repositorio; no es un recibo emitido por el SGA ni acredita una entrega realizada.

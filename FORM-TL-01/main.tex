@@ -13,7 +13,7 @@
 \title{FORM-TL-01 - Taller de tipos de requisitos\\
 \large Ingeniería de Requerimientos (ISR-401) - 4.\textsuperscript{o} nivel - Paralelo A}
 \author{Alan Andrés Aldas Zambrano}
-\date{Fecha límite de entrega: 7 de noviembre de 2026}
+\date{Fecha de entrega indicada por el estudiante: 7 de noviembre de 2026}
 
 \begin{document}
 
@@ -22,9 +22,9 @@
 % ---------------------------------------------------------------
 \section{Clasificación de los enunciados}
 
-La plataforma de gestión de citas médicas es el sistema de interés. Se usa software para obligaciones asignadas a la aplicación y sistema para obligaciones que abarcan infraestructura, servicios externos o dispositivos. La elección del nivel es una interpretación del alcance, no una consecuencia automática de mencionar un actor humano.
+El caso corresponde al Policlínico Ribera del Quevedo. Para clasificar los enunciados, se considera software a la aplicación y sistema al conjunto que incluye servidores, dispositivos y servicios externos. En la columna ámbito, producto se refiere a la plataforma y proceso a la forma de desarrollar el proyecto. La columna nivel distingue sistema y software.
 
-Las propiedades de calidad se vinculan al modelo ISO/IEC 25010:2023 \cite{iso25010}. Se emplea capacidad de interacción e inclusividad, sin conservar accesibilidad como subcaracterística de la edición anterior. Los nombres en español son traducciones de trabajo. Una función puede contribuir a la seguridad sin convertirse por ello en requisito de calidad. Las restricciones de proceso no tienen nivel de producto; E05 se trata como decisión tecnológica del producto, aunque condiciona su construcción. E17 se interpreta como obligación del sistema y también exige procedimientos organizativos fuera de este alcance.
+Las características de calidad se toman de ISO/IEC 25010:2023 \cite{iso25010}. Por eso se usa capacidad de interacción e inclusividad. Una función puede ayudar a la seguridad, como cerrar una sesión, y seguir siendo funcional. En E05 se clasifica la tecnología como una restricción del producto. En E17, el cumplimiento de la ley afecta al sistema y también requiere medidas de la organización.
 
 % Sistema: Plataforma de gestión de citas médicas. Enunciados copiados de la Tabla 1 del caso entregado por el docente.
 % Tipo: funcional, calidad (indicar la característica de ISO/IEC 25010:2023) o restricción.
@@ -35,11 +35,11 @@ Las propiedades de calidad se vinculan al modelo ISO/IEC 25010:2023 \cite{iso250
 \begin{longtable}{|c|L{4.0cm}|L{2.3cm}|L{1.7cm}|L{1.7cm}|L{3.4cm}|}
 \caption{Clasificación de los 20 enunciados.}\label{tab:clasificacion}\\
 \hline
-\textbf{Código} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{Producto o proceso} & \textbf{Sistema o software} & \textbf{Justificación} \\
+\textbf{Código} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{Ámbito} & \textbf{Nivel} & \textbf{Justificación} \\
 \hline
 \endfirsthead
 \hline
-\textbf{Código} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{Producto o proceso} & \textbf{Sistema o software} & \textbf{Justificación} \\
+\textbf{Código} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{Ámbito} & \textbf{Nivel} & \textbf{Justificación} \\
 \hline
 \endhead
 E01 & El paciente podrá reservar una cita eligiendo especialidad, médico, fecha y hora entre los horarios disponibles. & Funcional & Producto & Software & Describe una acción que el paciente realiza en la plataforma. \\ \hline
@@ -48,19 +48,19 @@ E03 & La aplicación debe ser rápida. & Calidad: eficiencia de desempeño & Pro
 E04 & El recepcionista podrá registrar la llegada del paciente que se acerca a la ventanilla. & Funcional & Producto & Software & Es una acción que el recepcionista hace en el sistema. \\ \hline
 E05 & La plataforma se desarrollará en Java 21 con base de datos PostgreSQL, tecnologías que domina el área de TI. & Restricción tecnológica & Producto & Software & Impone el lenguaje y la base de datos; no es algo que el sistema haga. \\ \hline
 E06 & El médico podrá consultar la lista de pacientes del día y marcar cada consulta como atendida. & Funcional & Producto & Software & Indica dos acciones del médico: consultar la lista y marcar la consulta. \\ \hline
-E07 & Los datos de salud de los pacientes deben estar seguros. & Calidad: seguridad (confidencialidad) & Producto & Sistema & Exige protección sin precisar amenazas; la confidencialidad es una interpretación que debe validarse. \\ \hline
-E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & Restricción de plataforma & Producto & Software & Impone el entorno Android; también orienta pruebas de flexibilidad (adaptabilidad). \\ \hline
+E07 & Los datos de salud de los pacientes deben estar seguros. & Calidad: seguridad (confidencialidad) & Producto & Sistema & Pide proteger los datos de los pacientes; se toma la confidencialidad como una parte de esa seguridad. \\ \hline
+E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & Restricción de plataforma & Producto & Software & Fija la versión mínima de Android en la que debe funcionar la aplicación. \\ \hline
 E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & Funcional (regla de negocio) & Producto & Software & Define cómo debe actuar el sistema cuando se cancela tarde una cita. \\ \hline
 E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & Calidad: capacidad de interacción (inclusividad) & Producto & Sistema & Habla de la facilidad de uso, pero «fácil» no es medible. \\ \hline
 E11 & El proyecto debe entregarse en un plazo máximo de seis meses. & Restricción temporal & Proceso & No aplica (proyecto) & Es un plazo del proyecto, no una característica del sistema. \\ \hline
-E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & Funcional, asociado a seguridad & Producto & Software & Especifica una acción automática ante la inactividad, no una propiedad de autenticidad. \\ \hline
+E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & Funcional, asociado a seguridad & Producto & Software & Indica una acción de la aplicación: cerrar la sesión después de 10 minutos sin actividad. \\ \hline
 E13 & El quiosco de la sala de espera leerá el número de cédula ingresado en su pantalla táctil e imprimirá un ticket con el número de turno. & Funcional & Producto & Sistema & Necesita hardware: la pantalla táctil y la impresora del quiosco. \\ \hline
 E14 & La plataforma debe estar siempre disponible. & Calidad: fiabilidad (disponibilidad) & Producto & Sistema & Pide que el servicio no se caiga, pero «siempre» no define periodo ni condiciones de aceptación. \\ \hline
 E15 & El director médico podrá generar un reporte mensual de inasistencias por especialidad. & Funcional & Producto & Software & Es un reporte que el director médico puede generar. \\ \hline
 E16 & Cada incremento se validará con el director médico al final de cada iteración de dos semanas. & Restricción de proceso & Proceso & No aplica (proyecto) & Describe cómo se valida el trabajo del equipo durante el desarrollo. \\ \hline
 E17 & El tratamiento de los datos personales de los pacientes debe cumplir la Ley Orgánica de Protección de Datos Personales del Ecuador. & Restricción legal & Producto & Sistema & Obliga a cumplir la LOPDP en todo el tratamiento de los datos. \\ \hline
 E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & Calidad: compatibilidad (interoperabilidad) & Producto & Sistema & Depende de otro sistema que ya existe; «sin problemas» no es verificable. \\ \hline
-E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & Calidad: fiabilidad (recuperabilidad) & Producto & Sistema & Exige recuperación menor a 30 minutos y pérdida cero de citas confirmadas (RPO = 0). \\ \hline
+E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & Calidad: fiabilidad (recuperabilidad) & Producto & Sistema & Pide recuperar el servicio en menos de 30 minutos y conservar todas las citas confirmadas. \\ \hline
 E20 & Todo cambio en el código fuente será revisado por otro integrante del equipo antes de integrarse a la rama principal. & Restricción de proceso & Proceso & No aplica (proyecto) & Es una práctica del equipo de desarrollo, no algo que haga la plataforma. \\ \hline
 \end{longtable}
 \endgroup
@@ -68,27 +68,27 @@ E20 & Todo cambio en el código fuente será revisado por otro integrante del eq
 % ---------------------------------------------------------------
 \section{Requisitos de calidad cuantificados}
 
-Las siguientes son propuestas de aceptación para E03, E07, E10, E14 y E18. Sus umbrales y condiciones deben validarse con los interesados; no son valores impuestos por ISO ni resultados de pruebas ejecutadas. Se precisan condiciones y criterios verificables siguiendo el enfoque de ingeniería de requisitos de \cite{iso29148}.
+Se reescriben los cinco enunciados vagos del caso. Los valores son propuestas para revisar con el director médico y el área de TI. No son resultados de pruebas realizadas ni valores exigidos por ISO. Se indican métricas, umbrales y condiciones para poder comprobarlos \cite{iso29148}.
 
 \subsection{E03 Tiempo de respuesta}
-La aplicación mostrará los horarios disponibles de un médico con percentil 95 de tiempo de respuesta menor a 2 segundos. Se medirá desde la solicitud en el cliente hasta la visualización completa, durante 30 minutos posteriores a 5 minutos de calentamiento, con 200 usuarios virtuales activos, cada uno consultando cada 5 segundos, y al menos 10000 consultas. Se usará una base de 100 médicos y 100000 citas sintéticas, un servidor de 4 vCPU y 8 GB RAM y latencia de red de ida y vuelta de 50 ms. Las respuestas fallidas contarán como incumplimiento temporal y la tasa de errores deberá ser menor al 1\,\%. Característica: eficiencia de desempeño, comportamiento temporal.
+La aplicación mostrará los horarios disponibles en menos de 2 segundos en al menos el 95\,\% de las consultas, con 300 usuarios activos al mismo tiempo, como indica el pico previsto en el caso. La prueba durará 30 minutos, después de 5 minutos de preparación, con al menos 10000 consultas. El tiempo se contará desde que el usuario solicita los horarios hasta que aparecen completos en pantalla. Se usarán 12000 pacientes de prueba y agendas de los 24 médicos del policlínico. Los errores contarán como consultas que no cumplen. Antes de probar, se registrarán el servidor, la conexión y el teléfono Android de gama media o baja utilizados para poder repetir la prueba. Métrica: consultas correctas en menos de 2 segundos / total de consultas, mínimo 95\,\%. Característica: eficiencia de desempeño, comportamiento temporal.
 
-\subsection{E07 Protección de datos de salud}
-El sistema denegará el 100\,\% de los accesos a historias clínicas no permitidos por una matriz de autorización aprobada y registrará el 100\,\% de los intentos, permitidos y denegados, con usuario, paciente, acción, fecha y hora UTC y resultado, sin copiar contenido clínico al registro. Se probarán al menos 100 casos permitidos y 100 denegados con datos sintéticos, cubriendo paciente propio y ajeno, médico asignado y no asignado, recepción y usuario sin sesión, tanto por interfaz como por API directa. Se exige cero lecturas o modificaciones no autorizadas y coincidencia entre intentos ejecutados y registros. Característica: seguridad, confidencialidad y responsabilidad (accountability). Esta prueba no demuestra ausencia de toda vulnerabilidad ni cubre por sí sola la seguridad completa.
+\subsection{E07 Protección de datos de los pacientes}
+El sistema bloqueará el 100\,\% de los intentos de consultar o modificar datos de pacientes sin permiso. Se probarán al menos 100 accesos permitidos y 100 no permitidos con datos ficticios y cuentas de paciente, recepcionista, médico y administrador. Los permisos de cada rol se acordarán antes de la prueba; se incluirán cuentas sin sesión e intentos de acceder a datos de otro paciente. Todos los intentos deberán quedar registrados con usuario, fecha, hora, acción y resultado, sin copiar datos sensibles al registro. Umbrales: cero accesos no permitidos y 100\,\% de intentos registrados. Característica: seguridad, confidencialidad y responsabilidad. Se protegen los datos manejados por la plataforma de citas; la historia clínica electrónica queda fuera del proyecto.
 
-\subsection{E10 Uso inicial por adultos mayores}
-Al menos 18 de 20 participantes de 60 años o más, sin uso previo de la plataforma, completarán correctamente una reserva en menos de 180 segundos y sin ayuda del evaluador. La tarea será elegir una especialidad, un médico y un horario y obtener la confirmación con datos de prueba. El tiempo comenzará al mostrar la pantalla inicial con sesión iniciada y terminará con la confirmación. Se permitirán las ayudas incorporadas en la interfaz. Se usarán el mismo teléfono Android 10 de 6 pulgadas y la misma conexión Wi-Fi para todos; se registrarán tiempos, abandonos y errores sin excluir fallos. Se incluirán 10 participantes de 60 a 69 años y 10 de 70 años o más, con experiencia móvil variada. Métrica: reservas correctas sin ayuda y en tiempo / 20, mínimo 90\,\%. Característica: capacidad de interacción, aprendizaje e inclusividad. Es un criterio de aceptación de esta muestra, no una generalización estadística a toda la población.
+\subsection{E10 Facilidad de uso para adultos mayores}
+Al menos 18 de 20 personas de 60 años o más, que no hayan usado la plataforma, reservarán correctamente una cita en menos de 3 minutos sin ayuda de otra persona. Podrán usar las instrucciones de la aplicación. La tarea será elegir especialidad, médico y horario y obtener la confirmación con datos ficticios. El tiempo se contará desde la pantalla inicial con sesión iniciada hasta la confirmación. Se usará el mismo teléfono Android de gama media o baja y la misma conexión para todos. Se registrarán los tiempos, errores y abandonos de los 20 participantes. Métrica: reservas correctas, sin ayuda y en menos de 3 minutos / 20, mínimo 90\,\%. Característica: capacidad de interacción, aprendizaje e inclusividad.
 
-\subsection{E14 Disponibilidad mensual}
-El servicio alcanzará disponibilidad mensual de al menos 99,5\,\% en régimen 24/7, incluyendo mantenimiento planificado. Una sonda externa comprobará cada minuto la consulta de horarios y una reserva sintética reversible; el intervalo será disponible solo si ambas operaciones terminan correctamente en menos de 10 segundos. Los intervalos sin datos de monitorización contarán como no disponibles. Métrica: $A=100\,(N-F)/N$, donde $N$ es el total de intervalos del mes y $F$ los intervalos fallidos. Para un mes de 30 días, se permiten como máximo 216 minutos no disponibles. Se conservarán registros de sondas y configuración. Característica: fiabilidad, disponibilidad.
+\subsection{E14 Disponibilidad}
+La plataforma estará disponible al menos el 99,5\,\% del tiempo de cada mes, las 24 horas del día. Este horario se propone para permitir reservas fuera del horario de atención presencial, de lunes a sábado de 07:00 a 19:00. Cada minuto se comprobará que se pueden consultar horarios y completar una reserva de prueba, que después se eliminará. La comprobación será correcta si ambas acciones terminan sin error en menos de 10 segundos. El mantenimiento y los periodos sin registro contarán como tiempo no disponible. Métrica: $100\,(N-F)/N$, donde $N$ es el total de comprobaciones previstas y $F$ las fallidas o sin registro. Umbral: mínimo 99,5\,\%; en un mes de 30 días equivale a un máximo de 216 minutos no disponibles. Característica: fiabilidad, disponibilidad.
 
-\subsection{E18 Intercambio con facturación}
-En una prueba de 1000 consultas atendidas sintéticas con identificador único, el sistema de facturación recibirá, validará y confirmará cada registro en menos de 5 minutos desde que se marca la consulta como atendida. Se verificará el contrato de interfaz acordado (identificador, fecha, especialidad y código del servicio) mediante confirmación y conciliación con los registros persistidos en destino. La prueba incluirá 100 retransmisiones de identificadores ya enviados y una interrupción de comunicación de 60 segundos. Umbrales: 1000 de 1000 registros correctos, cero registros faltantes y cero duplicados de negocio; máximo tiempo de confirmación menor a 300 segundos, incluida la interrupción. Característica: compatibilidad, interoperabilidad. La reserva no implica un cobro definitivo; este flujo de facturación propuesto debe confirmarse con los interesados.
+\subsection{E18 Integración con facturación}
+La plataforma enviará los datos acordados de cada consulta atendida al sistema de facturación existente y recibirá su confirmación en menos de 5 minutos. La prueba tendrá 1000 consultas ficticias con identificadores únicos. Se compararán los registros enviados con los recibidos para exigir cero registros perdidos, cero duplicados y datos coincidentes. Se repetirán 100 envíos y se interrumpirá la conexión durante 60 segundos para comprobar que el reintento no duplica registros. El límite de 5 minutos incluirá esa interrupción. Los campos y permisos se acordarán con el proveedor usando su interfaz web documentada. La emisión de facturas seguirá a cargo del sistema actual. Métricas: 1000 registros recibidos correctamente de 1000, cero duplicados y tiempo máximo menor a 300 segundos. Característica: compatibilidad, interoperabilidad.
 
 % ---------------------------------------------------------------
 \section{Discrepancias con el compañero}
 
-\textbf{PENDIENTE: no se ha realizado ni acreditado una comparación con un compañero.} Esta sección es una plantilla y no constituye evidencia de discusión. Completarla después de una conversación real, incluso si no se encuentran discrepancias.
+\textbf{Pendiente de comparar con un compañero.} La siguiente tabla se completará después de revisar las respuestas juntos.
 
 Nombre del compañero: \hrulefill
 
@@ -100,7 +100,7 @@ Fecha y medio de comparación: \hrulefill
 Pendiente & Por completar & Por completar & Registrar el acuerdo real y su fundamento. \\\hline
 \end{longtable}
 
-Si no hubo discrepancias, registrar los códigos revisados y el acuerdo alcanzado. La entrega académica sigue pendiente de esta actividad y de su registro.
+Si no hay diferencias, se anotarán los enunciados revisados y el acuerdo alcanzado.
 
 \clearpage
 \bibliographystyle{IEEEtran}
