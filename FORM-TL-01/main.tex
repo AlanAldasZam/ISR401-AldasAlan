@@ -22,9 +22,9 @@
 % ---------------------------------------------------------------
 \section{Clasificación de los enunciados}
 
-El caso corresponde al Policlínico Ribera del Quevedo. Se usan las cuatro categorías de la guía reducida: funcional, no funcional, restricción y dominio. Se conservan también los ejes producto/proceso y sistema/software de la guía extensa.
+El caso corresponde al Policlínico Ribera del Quevedo. Se sigue la guía completa de FORM-TL-01: tipo funcional, calidad o restricción; producto o proceso; sistema o software. Como complemento de la guía reducida, se indica cuándo un enunciado expresa una regla del dominio.
 
-\textbf{Funcional:} acción o tarea del sistema; \textbf{no funcional:} propiedad de calidad, según 5.2.8.3 de IEEE 29148 \cite{iso29148}. \textbf{Restricción:} límite impuesto a la solución o al trabajo, según 3.1.7 y 5.2.4 de la misma norma. \textbf{Dominio:} regla propia de la actividad médica; aquí se usa como categoría de la guía, sin atribuir esta clasificación de cuatro grupos a IEEE 29148. Una regla de dominio puede originar una función.
+\textbf{Funcional:} acción o tarea del sistema; \textbf{no funcional:} propiedad de calidad, según 5.2.8.3 de IEEE 29148 \cite{iso29148}. \textbf{Restricción:} límite impuesto a la solución o al trabajo, según 3.1.7 y 5.2.4 de la misma norma. \textbf{Dominio:} regla propia de la actividad médica. Es una lectura complementaria, no una categoría principal de la guía completa; una regla de dominio puede originar una función.
 
 Software se refiere a la aplicación; sistema incluye los dispositivos y servicios del alcance. Producto describe la plataforma; proceso describe el trabajo para construirla. Las propiedades no funcionales se detallan con ISO/IEC 25010:2023 \cite{iso25010}. Las referencias de cada justificación remiten a la definición aplicada, no a ejemplos del policlínico contenidos en la norma.
 
@@ -46,23 +46,23 @@ Software se refiere a la aplicación; sistema incluye los dispositivos y servici
 \endhead
 E01 & El paciente podrá reservar una cita eligiendo especialidad, médico, fecha y hora entre los horarios disponibles. & Funcional & Producto & Software & Describe una acción que el paciente realiza en la plataforma. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E02 & La plataforma enviará al paciente un recordatorio por mensaje de texto 24 horas antes de su cita. & Funcional & Producto & Sistema & Es una acción de la plataforma, pero el SMS depende de un servicio externo de mensajería. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
-E03 & La aplicación debe ser rápida. & No funcional: eficiencia de desempeño & Producto & Software & Habla de qué tan rápido responde, no de qué hace. Es vago porque no dice cuánto es rápido. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E03 & La aplicación debe ser rápida. & Calidad: eficiencia de desempeño & Producto & Software & Habla de qué tan rápido responde, no de qué hace. Es vago porque no dice cuánto es rápido. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E04 & El recepcionista podrá registrar la llegada del paciente que se acerca a la ventanilla. & Funcional & Producto & Software & Es una acción que el recepcionista hace en el sistema. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E05 & La plataforma se desarrollará en Java 21 con base de datos PostgreSQL, tecnologías que domina el área de TI. & Restricción tecnológica & Producto & Software & Impone el lenguaje y la base de datos; no es algo que el sistema haga. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
 E06 & El médico podrá consultar la lista de pacientes del día y marcar cada consulta como atendida. & Funcional & Producto & Software & Indica dos acciones del médico: consultar la lista y marcar la consulta. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
-E07 & Los datos de salud de los pacientes deben estar seguros. & No funcional: seguridad (confidencialidad) & Producto & Sistema & Pide proteger los datos de los pacientes; se toma la confidencialidad como una parte de esa seguridad. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E07 & Los datos de salud de los pacientes deben estar seguros. & Calidad: seguridad (confidencialidad) & Producto & Sistema & Pide proteger los datos de los pacientes; se toma la confidencialidad como una parte de esa seguridad. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & Restricción de plataforma & Producto & Software & Fija la versión mínima de Android en la que debe funcionar la aplicación. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
-E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & Dominio (regla de negocio) & Producto & Sistema & Fija una regla del policlínico que origina el registro automático de inasistencia; 5.2.4 de \cite{iso29148}. \\ \hline
-E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & No funcional: capacidad de interacción (inclusividad) & Producto & Sistema & Habla de la facilidad de uso, pero «fácil» no es medible. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & Funcional (regla de negocio) & Producto & Software & Ordena registrar la cancelación tardía como inasistencia; es una función derivada de una regla del dominio, según el tipo de 5.2.8.3 de \cite{iso29148}. \\ \hline
+E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & Calidad: capacidad de interacción (inclusividad) & Producto & Sistema & Habla de la facilidad de uso, pero «fácil» no es medible. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E11 & El proyecto debe entregarse en un plazo máximo de seis meses. & Restricción temporal & Proceso & No aplica (proyecto) & Es un plazo del proyecto, no una característica del sistema. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
 E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & Funcional, asociado a seguridad & Producto & Software & Indica una acción de la aplicación: cerrar la sesión después de 10 minutos sin actividad. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E13 & El quiosco de la sala de espera leerá el número de cédula ingresado en su pantalla táctil e imprimirá un ticket con el número de turno. & Funcional & Producto & Sistema & Necesita hardware: la pantalla táctil y la impresora del quiosco. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
-E14 & La plataforma debe estar siempre disponible. & No funcional: fiabilidad (disponibilidad) & Producto & Sistema & Pide que el servicio no se caiga, pero «siempre» no define periodo ni condiciones de aceptación. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E14 & La plataforma debe estar siempre disponible. & Calidad: fiabilidad (disponibilidad) & Producto & Sistema & Pide que el servicio no se caiga, pero «siempre» no define periodo ni condiciones de aceptación. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E15 & El director médico podrá generar un reporte mensual de inasistencias por especialidad. & Funcional & Producto & Software & Es un reporte que el director médico puede generar. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E16 & Cada incremento se validará con el director médico al final de cada iteración de dos semanas. & Restricción de proceso & Proceso & No aplica (proyecto) & Describe cómo se valida el trabajo del equipo durante el desarrollo. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
 E17 & El tratamiento de los datos personales de los pacientes debe cumplir la Ley Orgánica de Protección de Datos Personales del Ecuador. & Restricción legal & Producto & Sistema & Obliga a cumplir la LOPDP en todo el tratamiento de los datos. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
-E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & No funcional: compatibilidad (interoperabilidad) & Producto & Sistema & Depende de otro sistema que ya existe; «sin problemas» no es verificable. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
-E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & No funcional: fiabilidad (recuperabilidad) & Producto & Sistema & Pide recuperar el servicio en menos de 30 minutos y conservar todas las citas confirmadas. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & Calidad: compatibilidad (interoperabilidad) & Producto & Sistema & Depende de otro sistema que ya existe; «sin problemas» no es verificable. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
+E19 & Si el servidor principal falla, la plataforma debe restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & Calidad: fiabilidad (recuperabilidad) & Producto & Sistema & Pide recuperar el servicio en menos de 30 minutos y conservar todas las citas confirmadas. Tipo aplicado: 5.2.8.3 de \cite{iso29148}. \\ \hline
 E20 & Todo cambio en el código fuente será revisado por otro integrante del equipo antes de integrarse a la rama principal. & Restricción de proceso & Proceso & No aplica (proyecto) & Es una práctica del equipo de desarrollo, no algo que haga la plataforma. Definición de restricción: 3.1.7 de \cite{iso29148}. \\ \hline
 \end{longtable}
 \endgroup
@@ -119,6 +119,10 @@ E12 & Funcional: cerrar la sesión tras 10 minutos sin actividad. & Funcional, p
 E10 & Máximo 5 minutos para reservar sin ayuda, dando tiempo a leer y orientarse. & Máximo 10 minutos, para que los adultos mayores tengan tiempo de conocer la aplicación. & No hubo acuerdo sobre el tiempo. Cada uno mantuvo su propuesta. En este trabajo conservo 5 minutos como umbral propuesto; debe validarse con usuarios reales. \\\hline
 \end{longtable}
 \endgroup
+
+\section{Uso de inteligencia artificial}
+
+Se utilizaron ChatGPT y Codex de OpenAI como apoyo para comprender conceptos, revisar la redacción, las clasificaciones y las métricas propuestas, y comprobar la compilación. El estudiante aportó respuestas y decidió ajustes durante la revisión. Se contrastaron las fuentes y se revisó el PDF generado. La versión exacta del modelo no consta en el registro. El detalle se conserva en la declaración separada y en \texttt{REGISTRO\_IA.md}.
 
 \clearpage
 \bibliographystyle{IEEEtran}

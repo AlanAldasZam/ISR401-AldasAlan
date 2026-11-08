@@ -57,7 +57,7 @@ La referencia original de Pohl se retiró porque sus datos no se habían verific
 
 La descripción reducida de FORM-TL-01 compartida al final pide una hoja de trabajo para el docente y dice que no se sube al SGA ni al repositorio; el mismo SGA muestra «Requiere envío: Sí». La guía extensa anterior pedía repositorio y comprobante. Se conservan los archivos ya subidos, sin afirmar que se haya aclarado esta contradicción. El estudiante indicó que ya envió un PDF al SGA; no se verificó ese envío desde esta sesión.
 
-No se añade una fecha de cierre inventada al comprobante. El 7 de noviembre corresponde de forma expresa a TA-IND-01, mientras la captura de la guía reducida de FORM-TL-01 no muestra fecha. El taller identifica la fecha de elaboración y revisión. Confirmar con el docente el medio y plazo de entrega vigentes.
+La guía completa de FORM-TL-01 indica 31 de octubre de 2026, 23:59. El comprobante actual incluye el 7 de noviembre de 2026 como fecha indicada por el estudiante en el SGA, sin hora confirmada; persiste la discrepancia con la guía. No hay ampliación confirmada. El 7 de noviembre es la fecha de elaboración y revisión del taller y la fecha expresa de TA-IND-01. Confirmar con el docente el plazo aplicable y reemplazar el comprobante anterior si procede.
 
 Para compilación limpia con fecha técnica fija y cálculo de hashes: `powershell -File FORM-TL-01/compilar.ps1`; añadir `-Offline` para usar solo caché. El parámetro `-Tectonic` acepta la ruta al ejecutable 0.17.0. El script conserva sus registros en la carpeta temporal indicada al terminar.
 
@@ -81,10 +81,12 @@ La declaración separada distingue la redacción previa con IA de la revisión p
 
 ## Adecuación actual de FORM-TL-01 a la guía reducida
 
-Se clasifican los veinte enunciados con las cuatro categorías de la guía: funcional, no funcional, restricción y dominio. E09 pasa a dominio por ser una regla del policlínico; puede originar un requisito funcional. Se mantienen los ejes adicionales de la guía extensa. Las justificaciones incluyen referencias a 3.1.7, 5.2.4 y 5.2.8.3 de IEEE 29148 según corresponda. La norma no se presenta como autora de la taxonomía pedagógica de cuatro grupos.
+Tras contrastar de nuevo la guía completa, se clasifican los veinte enunciados como funcional, calidad o restricción, junto con producto/proceso y sistema/software. E09 es funcional y deriva de una regla del dominio. La categoría dominio de la guía reducida se conserva como lectura complementaria, sin sustituir la clasificación principal. Las justificaciones incluyen referencias a 3.1.7, 5.2.4 y 5.2.8.3 de IEEE 29148 según corresponda. La norma no se presenta como autora de la taxonomía pedagógica de cuatro grupos.
 
 Se identifican expresamente cinco enunciados problemáticos y sus correcciones medibles, apoyando el análisis de ambigüedad y verificabilidad en 5.2.5 y 5.2.7. Se conservan las condiciones de prueba propuestas, la revisión del estudiante y la comparación relatada con un compañero.
 
 Fuente de consulta de los apartados de IEEE 29148: reproducción textual pública de la norma en https://studylib.net/doc/28010959/iso-iec-ieee-29148-2018-e- , contrastando edición, títulos de apartados y metadatos con la ficha ISO y la vista previa. No se redistribuye el texto íntegro de la norma ni se afirma acceso a la biblioteca institucional.
 
 REGISTRO_IA.md contiene 117 mensajes recuperados pertinentes de esta sesión, con identidad del compañero anonimizada. Explica la cobertura, exclusiones y límite del contexto previo. La declaración Word continúa separada y requiere revisión personal; no equivale a aprobación del uso de IA por el docente.
+
+La sección de uso de IA también se incluye dentro del taller, como pide el apartado 6.8 de la guía completa. La declaración resume el apoyo en comprensión, redacción, revisión de clasificaciones y métricas y comprobación técnica, junto con los aportes del estudiante. El criterio de discrepancias resueltas no se marca como cumplido plenamente: E10 quedó sin acuerdo según el relato del estudiante.

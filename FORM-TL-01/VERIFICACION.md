@@ -19,10 +19,10 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-81c6e38ee029d199a7bf9bb7d45f12369ac005280bcf209ee817b0920e8888f7
+000096c4a140c14e48a0b1707de45943b6ebafef6cc88416ec73e6aaefa7af5a
 
 SHA-256 de comprobante_SGA.pdf:
-2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
+b4fee702703d02ff46daf446657d44df75a032522906ba68741f4124cb358679
 
 La reproducción comprobada depende de conservar Tectonic 0.17.0 y las mismas dependencias en caché. No se garantiza identidad binaria entre versiones, sistemas operativos o distribuciones. pdfLaTeX no estaba instalado y no se presenta como probado.
 
@@ -65,3 +65,13 @@ Resultado actual: main.pdf tiene seis páginas y la declaración Word dos. Se re
 Se recuperaron 117 solicitudes y respuestas pertinentes del estudiante desde el historial accesible de este chat. REGISTRO_IA.md especifica que no recupera la conversación de ChatGPT previa íntegra. El nombre del compañero se anonimiza; no se incluyen otros trabajos ni archivos privados. La revisión de la declaración corresponde al estudiante. La discrepancia de instrucciones de entrega debe aclararse con el docente.
 
 Se retiraron los campos de firma y confirmación y las indicaciones que los presentaban como obligatorios. La guía compartida no exige firma. No se alteró el registro literal de mensajes del chat.
+
+## Contraste final con la guía completa de FORM-TL-01
+
+Las capturas nuevas identifican expresamente la guía y lista de cotejo de FORM-TL-01. Se priorizan los tres tipos funcional, calidad y restricción y se mantiene la lectura de dominio como complemento. E09 queda funcional, producto y software. Se añadió la sección de uso real de IA dentro del propio taller, sin sustituir la declaración separada ni afirmar cumplimiento definitivo de la restricción docente. Se puso en el comprobante la fecha literal de la guía: 31 de octubre de 2026, 23:59. No se ha confirmado ampliación. El estudiante deberá reemplazar el comprobante previamente enviado si procede. La diferencia de cinco y diez minutos de E10 sigue sin acuerdo; no se inventa una resolución para marcar ese indicador como logrado. Se mantuvieron las fuentes y se repitieron dos compilaciones limpias con PDF idénticos.
+
+Se resumió la declaración con lenguaje neutral: comprensión, redacción, revisión de clasificaciones y métricas y comprobación técnica, reconociendo las respuestas y ajustes del estudiante. Se conservó la trazabilidad del apoyo real. Se repitieron las compilaciones limpias y se revisaron visualmente los documentos modificados.
+
+Por petición explícita del estudiante, el comprobante actual vuelve a omitir la fecha límite. Se comprobó que tiene una página y la URL íntegra. La guía completa exige esa fecha; no se declara cumplido ese requisito. Las notas anteriores de inclusión de fecha son históricas.
+
+El estudiante volvió a indicar que FORM-TL-01 cierra hoy, 7 de noviembre de 2026. El comprobante actual incorpora esa fecha identificada como aportada por el estudiante, sin atribuir verificación directa del SGA ni inventar hora. La discrepancia con la guía del 31 de octubre queda documentada. Se verificó una página y URL completa.
