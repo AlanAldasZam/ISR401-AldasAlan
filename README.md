@@ -13,7 +13,7 @@ Repositorio personal de Alan Andrés Aldas Zambrano para Ingeniería de Requerim
 - `FORM-TL-01/declaracion_uso_IA.docx`: declaración separada, pendiente de revisión y firma del estudiante.
 - `FORM-TL-01/VERIFICACION.md`: alcance y resultados técnicos.
 
-La comparación con un compañero está PENDIENTE. La sección correspondiente es una plantilla; no acredita una discusión realizada. Los umbrales de calidad son propuestas de aceptación por validar, no resultados de pruebas ni valores exigidos por ISO.
+La comparación con un compañero recoge las opiniones relatadas por el estudiante sobre E08, E10 y E12, sin publicar su nombre. Hay acuerdo en E08 y E12; la diferencia entre cinco y diez minutos en E10 quedó sin resolver. Los umbrales de calidad son propuestas de aceptación por validar, no resultados de pruebas ni valores exigidos por ISO.
 
 ## Compilación
 
@@ -55,7 +55,7 @@ La referencia original de Pohl se retiró porque sus datos no se habían verific
 
 ## Entrega
 
-Completar la comparación real, revisar y firmar la declaración de IA y volver a compilar el taller. Después adjuntar el comprobante en el SGA siguiendo la guía del docente y conservar el recibo que emita el sistema. El cierre indicado en la consigna es el 7 de noviembre de 2026.
+Revisar la comparación registrada, revisar y firmar la declaración de IA y volver a compilar el taller. Después adjuntar el comprobante en el SGA siguiendo la guía del docente y conservar el recibo que emita el sistema. El cierre indicado en la consigna es el 7 de noviembre de 2026.
 
 Para compilación limpia con fecha técnica fija y cálculo de hashes: `powershell -File FORM-TL-01/compilar.ps1`; añadir `-Offline` para usar solo caché. El parámetro `-Tectonic` acepta la ruta al ejecutable 0.17.0. El script conserva sus registros en la carpeta temporal indicada al terminar.
 
@@ -69,10 +69,10 @@ La guía adjunta indica cierre el 31 de octubre de 2026 a las 23:59. El estudian
 
 El taller incluye la clasificación de 20 enunciados, sus justificaciones, cinco propuestas de requisitos de calidad medibles y referencias bibliográficas. Las fuentes están en FORM-TL-01/main.tex y referencias.bib; el documento compilado es main.pdf. La declaración de uso de IA está en un Word separado.
 
-Está pendiente comparar con un compañero y registrar las discrepancias o acuerdos reales en la plantilla del taller. El comprobante contiene únicamente los datos informativos y el enlace al repositorio; no es un recibo emitido por el SGA ni acredita una entrega realizada.
+Se registraron los acuerdos y la diferencia no resuelta del intercambio con un compañero, según el relato del estudiante. El comprobante contiene únicamente los datos informativos y el enlace al repositorio; no es un recibo emitido por el SGA ni acredita una entrega realizada.
 
 ## Revisión guiada de E10 y E14
 
 E10 propone ahora un máximo de cinco minutos para reservar sin ayuda en 18 de 20 participantes nuevos. E14 excluye hasta 120 minutos mensuales de mantenimiento anunciado con 48 horas de anticipación; el exceso y los fallos inesperados cuentan como no disponibilidad. El cálculo descuenta solo ese mantenimiento permitido.
 
-La declaración separada distingue la redacción previa con IA de la revisión posterior del estudiante. Incluye extractos parciales del chat; sigue pendiente reunir el registro completo de prompts requerido por los apuntes, revisar y firmar la declaración y realizar la comparación con un compañero.
+La declaración separada distingue la redacción previa con IA de la revisión posterior del estudiante. Incluye extractos parciales del chat; sigue pendiente reunir el registro completo de prompts requerido por los apuntes, revisar y firmar la declaración y revisar la comparación registrada.

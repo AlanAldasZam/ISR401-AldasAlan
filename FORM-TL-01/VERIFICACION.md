@@ -19,7 +19,7 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-fcc90729cd7a0bbf1388e8e8dcda91c54b8a7affd442c7b0278ce18e52cc48e6
+33b34da1edebadac85f9f9ad2227ba64b82ef052657364605bbda47e4c9c4984
 
 SHA-256 de comprobante_SGA.pdf:
 2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
@@ -49,3 +49,7 @@ Se actualizó la URL del comprobante tras confirmar el cambio de usuario a AlanA
 Se guardó la propuesta del estudiante de un máximo de cinco minutos para E10. En E14 eligió excluir mantenimiento programado y aceptó la propuesta de dos horas acumuladas al mes con aviso de 48 horas. Se ajustó el denominador de disponibilidad para descontar solo los intervalos permitidos. En 30 días con 120 minutos excluidos se evalúan 43080 minutos: se admiten hasta 215 intervalos fallidos de un minuto. Se repitieron dos compilaciones sin red, idénticas, y se revisaron las páginas modificadas.
 
 La declaración de IA incluye esta revisión y extractos identificados como parciales, sin afirmar que solo hubo tutoría. El registro completo de prompts, la revisión y firma y la comparación con un compañero siguen pendientes. El documento de declaración tiene dos páginas. No se afirma cumplimiento definitivo de la política docente de IA.
+
+## Estado actual de la comparación
+
+El estudiante informó posteriormente del intercambio con un compañero y relató sus respuestas: acuerdo en E08 y E12; diferencia sin resolver en E10, donde el estudiante mantuvo cinco minutos y el compañero diez para conocer la aplicación. Se registró únicamente este intercambio, sin publicar su nombre. Las notas anteriores sobre comparación pendiente son históricas y quedan superadas por este registro. No se usaron como evidencia las opiniones hipotéticas generadas previamente por la IA. La versión actual del PDF se compiló dos veces sin red con hash idéntico.
