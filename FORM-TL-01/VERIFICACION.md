@@ -19,7 +19,7 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-00ceb6c52ec6c6f6eec708b0c34471a70b1bbdba4ef9ed82dc8d7d627fafeb8c
+fcc90729cd7a0bbf1388e8e8dcda91c54b8a7affd442c7b0278ce18e52cc48e6
 
 SHA-256 de comprobante_SGA.pdf:
 2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
@@ -43,3 +43,9 @@ Se simplificó el comprobante a los datos informativos y la URL. El detalle del 
 Por solicitud del estudiante se retiraron modalidad y fechas del comprobante. Se mantienen los datos básicos y la URL; las fechas y la discrepancia del plazo siguen documentadas en README.md. Esta versión también se compiló dos veces sin red con PDF idénticos y mantiene una página.
 
 Se actualizó la URL del comprobante tras confirmar el cambio de usuario a AlanAldasZam. El PDF sigue en una página y se reprodujo de forma idéntica en dos compilaciones limpias sin red.
+
+## Revisión guiada del 7 de noviembre
+
+Se guardó la propuesta del estudiante de un máximo de cinco minutos para E10. En E14 eligió excluir mantenimiento programado y aceptó la propuesta de dos horas acumuladas al mes con aviso de 48 horas. Se ajustó el denominador de disponibilidad para descontar solo los intervalos permitidos. En 30 días con 120 minutos excluidos se evalúan 43080 minutos: se admiten hasta 215 intervalos fallidos de un minuto. Se repitieron dos compilaciones sin red, idénticas, y se revisaron las páginas modificadas.
+
+La declaración de IA incluye esta revisión y extractos identificados como parciales, sin afirmar que solo hubo tutoría. El registro completo de prompts, la revisión y firma y la comparación con un compañero siguen pendientes. El documento de declaración tiene dos páginas. No se afirma cumplimiento definitivo de la política docente de IA.

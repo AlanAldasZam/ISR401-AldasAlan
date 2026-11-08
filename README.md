@@ -70,3 +70,9 @@ La guía adjunta indica cierre el 31 de octubre de 2026 a las 23:59. El estudian
 El taller incluye la clasificación de 20 enunciados, sus justificaciones, cinco propuestas de requisitos de calidad medibles y referencias bibliográficas. Las fuentes están en FORM-TL-01/main.tex y referencias.bib; el documento compilado es main.pdf. La declaración de uso de IA está en un Word separado.
 
 Está pendiente comparar con un compañero y registrar las discrepancias o acuerdos reales en la plantilla del taller. El comprobante contiene únicamente los datos informativos y el enlace al repositorio; no es un recibo emitido por el SGA ni acredita una entrega realizada.
+
+## Revisión guiada de E10 y E14
+
+E10 propone ahora un máximo de cinco minutos para reservar sin ayuda en 18 de 20 participantes nuevos. E14 excluye hasta 120 minutos mensuales de mantenimiento anunciado con 48 horas de anticipación; el exceso y los fallos inesperados cuentan como no disponibilidad. El cálculo descuenta solo ese mantenimiento permitido.
+
+La declaración separada distingue la redacción previa con IA de la revisión posterior del estudiante. Incluye extractos parciales del chat; sigue pendiente reunir el registro completo de prompts requerido por los apuntes, revisar y firmar la declaración y realizar la comparación con un compañero.
