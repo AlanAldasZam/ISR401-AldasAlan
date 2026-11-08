@@ -53,4 +53,17 @@ El estudiante indicó que el pedido se conserva si no puede imprimirse y que el 
 
 Los dispositivos usan la red wifi del local. No se distinguió mediante una prueba si el corte relatado fue de internet, de la red local o de otro componente. No se declara funcionamiento offline comprobado ni tiempo de recuperación medido.
 
-El estudiante considera más grave una impresión accidental duplicada que una demora breve, porque puede confundir a cocina. Confirmó una opción de reimpresión desde la aplicación de teléfono o tablet para recuperar el contenido cuando se pierde una comanda. La reimpresión solicitada debe distinguirse de un duplicado accidental; queda por confirmar expresamente qué marca visible lleva la copia.
+El estudiante considera más grave una impresión accidental duplicada que una demora breve, porque puede confundir a cocina. Confirmó una opción de reimpresión desde la aplicación de teléfono o tablet para recuperar el contenido cuando se pierde una comanda. La reimpresión solicitada debe distinguirse de un duplicado accidental; El estudiante confirmó posteriormente que la palabra COPIA aparece en la parte superior de la comanda reimpresa.
+
+## Confirmaciones sobre acceso e inventario
+
+- La aplicación de caja también exige credenciales para entrar. El estudiante confirmó que los meseros no pueden acceder a caja para modificar precios. No se infiere que solo ocultar pantallas demuestre autorización correcta en la API.
+- El inventario se descuenta manualmente. Ante el ejemplo de intentar descontar ocho litros cuando quedan cinco, el estudiante indicó que la operación está validada y confirmó el ejemplo de rechazo. Se toma como confirmación verbal del comportamiento esperado, sin afirmar que se ejecutara la prueba en esta sesión.
+
+## Reflexión aportada por el estudiante
+
+La parte de las comandas fue la que más le costó porque aparecían detalles nuevos, como apartados para parrilla, moros y entradas. Explicó que la cocina se organiza por áreas de preparación y que conviene dejar los pedidos especificados para cada una.
+
+El diseño se fue ajustando sobre la marcha. Esos cambios exigieron nuevas actualizaciones; no se ha cuantificado el tiempo adicional ni se afirma que hubiera un prototipo aprobado antes de programar. Para otro proyecto, el estudiante dijo que preguntaría con más detalle qué quiere el dueño que aparezca en la comanda.
+
+Este apartado registra sus respuestas y no sustituye todavía la reflexión final redactada por él ni el resumen analítico de la norma.
