@@ -21,3 +21,14 @@ Actualmente hice una aplicación de teléfono donde está el menú y se puede el
 - Desde la aplicación de escritorio se puede marcar un plato como no disponible. El cambio se refleja en el menú del teléfono para que el mesero no lo siga ofreciendo. No se ha especificado todavía el comportamiento ante un pedido que ya tuviera seleccionado ese plato ni el tiempo de propagación del cambio.
 
 Los datos anteriores son el relato del estudiante. No se afirman pruebas actuales del sistema ni se incorporan datos privados del restaurante.
+
+## Precisión del envío y la impresión relatada por el estudiante
+
+- El mesero selecciona platos, cantidades y mesa. Puede añadir indicaciones en el campo de observaciones.
+- La comanda se solicita al pulsar Enviar a cocina. No se puede enviar un pedido vacío: se requiere al menos un plato.
+- La comanda debe conservar mesa, platos, cantidades e indicaciones. El estudiante explicó que sin la mesa el mesero no sabría dónde entregar el pedido y que una cantidad distinta sería incorrecta.
+- El teléfono, la PC y la impresora trabajan en la misma red local del restaurante; el intercambio pasa por una API, según lo indicado por el estudiante.
+- El estudiante estima una respuesta habitual de dos a tres segundos y dice haber observado funcionamiento ágil incluso con pedidos grandes. No se realizó una medición en esta revisión ni se fijó qué cantidad de líneas significa grande.
+- Para concretar su propuesta de rapidez, el estudiante confirmó un máximo de tres segundos desde pulsar Enviar a cocina hasta que empieza a salir el papel. No se toma ese valor como tiempo de impresión completa ni como un resultado de prueba.
+
+Para completar el criterio de aceptación todavía se deben precisar el número de líneas del pedido, la carga simultánea, la preparación de la impresora y el tamaño de la muestra de prueba. La existencia de una API no demuestra por sí sola que se cumpla el tiempo propuesto.
