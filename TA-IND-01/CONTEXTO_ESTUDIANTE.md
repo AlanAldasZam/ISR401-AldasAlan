@@ -38,3 +38,11 @@ Para completar el criterio de aceptación todavía se deben precisar el número 
 El estudiante relató un pedido de aproximadamente 30 tipos de productos, con bebidas, adicionales y observaciones, que comenzó a imprimirse en alrededor de uno a tres segundos sin trabarse. Es una observación retrospectiva, no una prueba cronometrada ni evidencia de que todos los pedidos cumplan ese tiempo.
 
 Actualmente trabajan dos meseros con dispositivos distintos: uno utiliza su teléfono propio y el otro una tablet grande. Esto describe el uso habitual. No se ha confirmado que el tiempo observado se midiera con ambos enviando al mismo tiempo.
+
+## Cola de impresión y acceso por usuario
+
+El estudiante explicó que los pedidos enviados muy cerca en el tiempo se atienden en una cola: primero se imprime el que llegó antes y el siguiente espera su turno, sin mezclar sus comandas. Indicó que lo había comprobado, pero no aportó una medición de la espera. Dice que es poco perceptible y que no sabe cuantificarla. No se afirma ausencia absoluta de fallos por concurrencia.
+
+Durante la conversación se planteó acotar el máximo propuesto de tres segundos al caso de impresora libre. Esa condición fue sugerida por el asistente y todavía requiere confirmación del estudiante. El tiempo incluyendo una cola ocupada queda por medir.
+
+El estudiante confirmó que cambiar precios y registrar cobros se hace en caja, no desde la aplicación del mesero. También confirmó que cada mesero tiene su propio usuario y PIN. No se registran credenciales ni se afirma haber comprobado técnicamente los permisos durante esta revisión.
