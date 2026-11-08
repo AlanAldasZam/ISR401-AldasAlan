@@ -10,7 +10,7 @@ Repositorio personal de Alan Andrés Aldas Zambrano para Ingeniería de Requerim
 - `FORM-TL-01/referencias.bib`: fuentes citadas en el texto.
 - `FORM-TL-01/main.pdf`: taller compilado.
 - `FORM-TL-01/comprobante_SGA.pdf`: ficha de una página para adjuntar al SGA; no es recibo de entrega.
-- `FORM-TL-01/declaracion_uso_IA.docx`: declaración separada, pendiente de revisión y firma del estudiante.
+- `FORM-TL-01/declaracion_uso_IA.docx`: declaración separada, pendiente de revisión del estudiante.
 - `FORM-TL-01/VERIFICACION.md`: alcance y resultados técnicos.
 
 La comparación con un compañero recoge las opiniones relatadas por el estudiante sobre E08, E10 y E12, sin publicar su nombre. Hay acuerdo en E08 y E12; la diferencia entre cinco y diez minutos en E10 quedó sin resolver. Los umbrales de calidad son propuestas de aceptación por validar, no resultados de pruebas ni valores exigidos por ISO.
@@ -53,9 +53,11 @@ https://gso-sims-preview-doc-aws.s3-eu-west-1.amazonaws.com/gso-iso-iec-25010-20
 
 La referencia original de Pohl se retiró porque sus datos no se habían verificado y no se utiliza como fundamento. No se afirma haber consultado el texto comercial completo de las normas. La mención de la ley ecuatoriana se conserva como enunciado del ejercicio, sin convertirla en una evaluación de cumplimiento legal.
 
-## Entrega
+## Entrega y versiones de la guía
 
-Revisar la comparación registrada, revisar y firmar la declaración de IA y volver a compilar el taller. Después adjuntar el comprobante en el SGA siguiendo la guía del docente y conservar el recibo que emita el sistema. El cierre indicado en la consigna es el 7 de noviembre de 2026.
+La descripción reducida de FORM-TL-01 compartida al final pide una hoja de trabajo para el docente y dice que no se sube al SGA ni al repositorio; el mismo SGA muestra «Requiere envío: Sí». La guía extensa anterior pedía repositorio y comprobante. Se conservan los archivos ya subidos, sin afirmar que se haya aclarado esta contradicción. El estudiante indicó que ya envió un PDF al SGA; no se verificó ese envío desde esta sesión.
+
+No se añade una fecha de cierre inventada al comprobante. El 7 de noviembre corresponde de forma expresa a TA-IND-01, mientras la captura de la guía reducida de FORM-TL-01 no muestra fecha. El taller identifica la fecha de elaboración y revisión. Confirmar con el docente el medio y plazo de entrega vigentes.
 
 Para compilación limpia con fecha técnica fija y cálculo de hashes: `powershell -File FORM-TL-01/compilar.ps1`; añadir `-Offline` para usar solo caché. El parámetro `-Tectonic` acepta la ruta al ejecutable 0.17.0. El script conserva sus registros en la carpeta temporal indicada al terminar.
 
@@ -75,4 +77,14 @@ Se registraron los acuerdos y la diferencia no resuelta del intercambio con un c
 
 E10 propone ahora un máximo de cinco minutos para reservar sin ayuda en 18 de 20 participantes nuevos. E14 excluye hasta 120 minutos mensuales de mantenimiento anunciado con 48 horas de anticipación; el exceso y los fallos inesperados cuentan como no disponibilidad. El cálculo descuenta solo ese mantenimiento permitido.
 
-La declaración separada distingue la redacción previa con IA de la revisión posterior del estudiante. Incluye extractos parciales del chat; sigue pendiente reunir el registro completo de prompts requerido por los apuntes, revisar y firmar la declaración y revisar la comparación registrada.
+La declaración separada distingue la redacción previa con IA de la revisión posterior del estudiante. Incluye extractos y remite a FORM-TL-01/REGISTRO_IA.md, con las solicitudes y respuestas de esta sesión recuperadas para el taller. La conversación previa de ChatGPT no está íntegra en el contexto disponible. Falta revisar la declaración.
+
+## Adecuación actual de FORM-TL-01 a la guía reducida
+
+Se clasifican los veinte enunciados con las cuatro categorías de la guía: funcional, no funcional, restricción y dominio. E09 pasa a dominio por ser una regla del policlínico; puede originar un requisito funcional. Se mantienen los ejes adicionales de la guía extensa. Las justificaciones incluyen referencias a 3.1.7, 5.2.4 y 5.2.8.3 de IEEE 29148 según corresponda. La norma no se presenta como autora de la taxonomía pedagógica de cuatro grupos.
+
+Se identifican expresamente cinco enunciados problemáticos y sus correcciones medibles, apoyando el análisis de ambigüedad y verificabilidad en 5.2.5 y 5.2.7. Se conservan las condiciones de prueba propuestas, la revisión del estudiante y la comparación relatada con un compañero.
+
+Fuente de consulta de los apartados de IEEE 29148: reproducción textual pública de la norma en https://studylib.net/doc/28010959/iso-iec-ieee-29148-2018-e- , contrastando edición, títulos de apartados y metadatos con la ficha ISO y la vista previa. No se redistribuye el texto íntegro de la norma ni se afirma acceso a la biblioteca institucional.
+
+REGISTRO_IA.md contiene 117 mensajes recuperados pertinentes de esta sesión, con identidad del compañero anonimizada. Explica la cobertura, exclusiones y límite del contexto previo. La declaración Word continúa separada y requiere revisión personal; no equivale a aprobación del uso de IA por el docente.

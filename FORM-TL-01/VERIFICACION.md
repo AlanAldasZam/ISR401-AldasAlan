@@ -12,14 +12,14 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 - E08 permanece como restricción de entorno, con relación secundaria a adaptabilidad. E19 conserva recuperabilidad y exige no perder citas confirmadas.
 - Se añaden cinco propuestas con métricas, umbrales, muestras, condiciones y reglas de fallo. No se ejecutaron esas pruebas de una plataforma médica: la tarea consiste en especificarlas.
 - Se sustituyó nocite por citas efectivas. Se retiró Pohl sin validar y se enlazaron fichas oficiales de ISO. Se contrastó la terminología con la vista previa pública del organismo GSO, adopción de ISO/IEC 25010:2023; no se consultó el texto comercial íntegro.
-- La comparación con compañero está pendiente, sin nombres, discrepancias ni acuerdos ficticios. La declaración de IA requiere revisión y firma personal.
+- La comparación con compañero está pendiente, sin nombres, discrepancias ni acuerdos ficticios. La declaración de IA requiere revisión personal.
 
 ## Compilación comprobada
 
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-1e56560afe11481b9882a5b01316cbf7194d26cb42322ca20abae45dbb985edd
+81c6e38ee029d199a7bf9bb7d45f12369ac005280bcf209ee817b0920e8888f7
 
 SHA-256 de comprobante_SGA.pdf:
 2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
@@ -48,10 +48,20 @@ Se actualizó la URL del comprobante tras confirmar el cambio de usuario a AlanA
 
 Se guardó la propuesta del estudiante de un máximo de cinco minutos para E10. En E14 eligió excluir mantenimiento programado y aceptó la propuesta de dos horas acumuladas al mes con aviso de 48 horas. Se ajustó el denominador de disponibilidad para descontar solo los intervalos permitidos. En 30 días con 120 minutos excluidos se evalúan 43080 minutos: se admiten hasta 215 intervalos fallidos de un minuto. Se repitieron dos compilaciones sin red, idénticas, y se revisaron las páginas modificadas.
 
-La declaración de IA incluye esta revisión y extractos identificados como parciales, sin afirmar que solo hubo tutoría. El registro completo de prompts, la revisión y firma y la comparación con un compañero siguen pendientes. El documento de declaración tiene dos páginas. No se afirma cumplimiento definitivo de la política docente de IA.
+La declaración de IA incluye esta revisión y extractos identificados como parciales, sin afirmar que solo hubo tutoría. El registro completo de prompts, la revisión y la comparación con un compañero siguen pendientes. El documento de declaración tiene dos páginas. No se afirma cumplimiento definitivo de la política docente de IA.
 
 ## Estado actual de la comparación
 
 El estudiante informó posteriormente del intercambio con un compañero y relató sus respuestas: acuerdo en E08 y E12; diferencia sin resolver en E10, donde el estudiante mantuvo cinco minutos y el compañero diez para conocer la aplicación. Se registró únicamente este intercambio, sin publicar su nombre. Las notas anteriores sobre comparación pendiente son históricas y quedan superadas por este registro. No se usaron como evidencia las opiniones hipotéticas generadas previamente por la IA. La versión actual del PDF se compiló dos veces sin red con hash idéntico.
 
 Se simplificó la introducción de la comparación, conservando las opiniones aportadas por el estudiante. La declaración de IA permanece separada y sin eliminar la asistencia real. Esta edición no adapta todavía el taller a las cuatro categorías de la guía reducida mostrada después; la discrepancia entre guías sigue pendiente de aclaración. Se verificó nuevamente compilación idéntica en dos carpetas y la página modificada.
+
+## Verificación de la adaptación a la guía reducida
+
+Esta revisión sustituye la nota anterior que dejaba pendiente la adaptación: se incluyeron dominio para E09, no funcional como categoría visible, referencias normativas por justificación y una sección explícita con cinco problemas y correcciones. Las cláusulas se consultaron en el texto público de la edición 2018 y se contrastaron con el índice de la vista previa. No se atribuye a IEEE 29148 una definición literal de la categoría docente dominio.
+
+Resultado actual: main.pdf tiene seis páginas y la declaración Word dos. Se revisaron las seis páginas del taller y las dos de la declaración, con corrección de anchos en las tablas. Dos compilaciones en carpetas nuevas sin red produjeron los mismos hashes; los registros finales no contienen referencias indefinidas ni cajas desbordadas. El comprobante no se modificó porque no se dispone de una fecha de cierre confirmada para esta guía reducida.
+
+Se recuperaron 117 solicitudes y respuestas pertinentes del estudiante desde el historial accesible de este chat. REGISTRO_IA.md especifica que no recupera la conversación de ChatGPT previa íntegra. El nombre del compañero se anonimiza; no se incluyen otros trabajos ni archivos privados. La revisión de la declaración corresponde al estudiante. La discrepancia de instrucciones de entrega debe aclararse con el docente.
+
+Se retiraron los campos de firma y confirmación y las indicaciones que los presentaban como obligatorios. La guía compartida no exige firma. No se alteró el registro literal de mensajes del chat.
