@@ -46,3 +46,11 @@ El estudiante explicó que los pedidos enviados muy cerca en el tiempo se atiend
 Durante la conversación se planteó acotar el máximo propuesto de tres segundos al caso de impresora libre. Esa condición fue sugerida por el asistente y todavía requiere confirmación del estudiante. El tiempo incluyendo una cola ocupada queda por medir.
 
 El estudiante confirmó que cambiar precios y registrar cobros se hace en caja, no desde la aplicación del mesero. También confirmó que cada mesero tiene su propio usuario y PIN. No se registran credenciales ni se afirma haber comprobado técnicamente los permisos durante esta revisión.
+
+## Impresión pendiente y reimpresión
+
+El estudiante indicó que el pedido se conserva si no puede imprimirse y que el estado de impresión en cola aparece tanto en el dispositivo del mesero como en escritorio. Relató que, al volver la conexión, se imprime automáticamente y aparece en la mesa. Aclaró que quiso decir que el proceso se realiza de forma eficiente, no que haga cosas raras. Es su descripción de lo observado; no se verificó el orden transaccional entre guardar el pedido, asociarlo a la mesa e imprimirlo.
+
+Los dispositivos usan la red wifi del local. No se distinguió mediante una prueba si el corte relatado fue de internet, de la red local o de otro componente. No se declara funcionamiento offline comprobado ni tiempo de recuperación medido.
+
+El estudiante considera más grave una impresión accidental duplicada que una demora breve, porque puede confundir a cocina. Confirmó una opción de reimpresión desde la aplicación de teléfono o tablet para recuperar el contenido cuando se pierde una comanda. La reimpresión solicitada debe distinguirse de un duplicado accidental; queda por confirmar expresamente qué marca visible lleva la copia.
