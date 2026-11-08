@@ -32,3 +32,9 @@ Los datos anteriores son el relato del estudiante. No se afirman pruebas actuale
 - Para concretar su propuesta de rapidez, el estudiante confirmó un máximo de tres segundos desde pulsar Enviar a cocina hasta que empieza a salir el papel. No se toma ese valor como tiempo de impresión completa ni como un resultado de prueba.
 
 Para completar el criterio de aceptación todavía se deben precisar el número de líneas del pedido, la carga simultánea, la preparación de la impresora y el tamaño de la muestra de prueba. La existencia de una API no demuestra por sí sola que se cumpla el tiempo propuesto.
+
+## Tamaño de pedido y usuarios habituales
+
+El estudiante relató un pedido de aproximadamente 30 tipos de productos, con bebidas, adicionales y observaciones, que comenzó a imprimirse en alrededor de uno a tres segundos sin trabarse. Es una observación retrospectiva, no una prueba cronometrada ni evidencia de que todos los pedidos cumplan ese tiempo.
+
+Actualmente trabajan dos meseros con dispositivos distintos: uno utiliza su teléfono propio y el otro una tablet grande. Esto describe el uso habitual. No se ha confirmado que el tiempo observado se midiera con ambos enviando al mismo tiempo.
