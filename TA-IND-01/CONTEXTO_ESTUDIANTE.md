@@ -10,10 +10,11 @@ Lo creé porque el dueño es amigo mío y estaban hartos de tomar pedidos a mano
 
 Actualmente hice una aplicación de teléfono donde está el menú y se puede elegir el plato con su mesa correspondiente. El pedido se envía a la PC, que imprime una comanda detallada con el pedido de esa mesa. Ahí también queda la venta total de la mesa y se pueden hacer tanto pagos por separado como pagos totales.
 
-## Datos por precisar con el estudiante
+## Aclaraciones confirmadas por el estudiante
 
-- Si el inventario solicitado ya está implementado o sigue pendiente.
-- Si facturación se refiere al registro de ventas y comprobantes internos o a facturas electrónicas autorizadas. No se asume que sean equivalentes.
-- Si los pagos separados se dividen por platos, personas o importes.
+- El sistema registra ventas y pagos de forma básica. No tiene integración con facturación electrónica del SRI.
+- El inventario ya funciona. El dueño revisa físicamente cuánto queda de insumos, como carne y aceite, y registra manualmente los descuentos en el programa. No se afirma descuento automático por plato vendido.
+- Los pagos separados se registran como abonos asociados a la mesa hasta completar el total.
+- El mesero puede agregar indicaciones, por ejemplo «sin cebolla», que aparecen en la comanda impresa para cocina.
 
 Los datos anteriores son el relato del estudiante. No se afirman pruebas actuales del sistema ni se incorporan datos privados del restaurante.
