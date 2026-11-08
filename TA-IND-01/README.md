@@ -34,3 +34,7 @@ tectonic --keep-logs TA-IND-01/comprobante_SGA.tex
 ```
 
 La primera ejecución necesita conexión para descargar dependencias. Se comprobó la generación local de una página con la caché de la actividad anterior. El informe principal todavía no se ha creado.
+
+## Capturas de interfaz disponibles
+
+Se incorporaron tres capturas reales del acceso, formulario de inventario y toma de pedido. Ver EVIDENCIAS.md y figuras/. Los originales con nombres de cuenta o proveedores no se publican. Las capturas documentan interfaz, no mediciones ni pruebas de todos los comportamientos. El informe principal y la lectura y redacción del estudiante siguen pendientes.
