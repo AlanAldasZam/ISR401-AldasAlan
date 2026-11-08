@@ -19,7 +19,7 @@ Se revisaron los archivos reales main.tex, referencias.bib y README.md. Se conse
 Windows, Tectonic 0.17.0 (x86_64-pc-windows-msvc), motor basado en XeTeX con BibTeX automático. La primera ejecución descargó las dependencias. Dos compilaciones posteriores en carpetas nuevas, con solo los tres fuentes, terminaron con código cero usando --only-cached y SOURCE_DATE_EPOCH=1793923200. Los dos PDF coincidieron byte por byte entre ambas ejecuciones.
 
 SHA-256 de main.pdf:
-33b34da1edebadac85f9f9ad2227ba64b82ef052657364605bbda47e4c9c4984
+1e56560afe11481b9882a5b01316cbf7194d26cb42322ca20abae45dbb985edd
 
 SHA-256 de comprobante_SGA.pdf:
 2e4d5ba7365b60f9ffb720ed7e01b1fff1dbd13ac3508867944ebfe9bf734043
@@ -53,3 +53,5 @@ La declaración de IA incluye esta revisión y extractos identificados como parc
 ## Estado actual de la comparación
 
 El estudiante informó posteriormente del intercambio con un compañero y relató sus respuestas: acuerdo en E08 y E12; diferencia sin resolver en E10, donde el estudiante mantuvo cinco minutos y el compañero diez para conocer la aplicación. Se registró únicamente este intercambio, sin publicar su nombre. Las notas anteriores sobre comparación pendiente son históricas y quedan superadas por este registro. No se usaron como evidencia las opiniones hipotéticas generadas previamente por la IA. La versión actual del PDF se compiló dos veces sin red con hash idéntico.
+
+Se simplificó la introducción de la comparación, conservando las opiniones aportadas por el estudiante. La declaración de IA permanece separada y sin eliminar la asistencia real. Esta edición no adapta todavía el taller a las cuatro categorías de la guía reducida mostrada después; la discrepancia entre guías sigue pendiente de aclaración. Se verificó nuevamente compilación idéntica en dos carpetas y la página modificada.
