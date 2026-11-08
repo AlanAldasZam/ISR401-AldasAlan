@@ -90,3 +90,7 @@ Fuente de consulta de los apartados de IEEE 29148: reproducción textual públic
 REGISTRO_IA.md contiene 117 mensajes recuperados pertinentes de esta sesión, con identidad del compañero anonimizada. Explica la cobertura, exclusiones y límite del contexto previo. La declaración Word continúa separada y requiere revisión personal; no equivale a aprobación del uso de IA por el docente.
 
 La sección de uso de IA también se incluye dentro del taller, como pide el apartado 6.8 de la guía completa. La declaración resume el apoyo en comprensión, redacción, revisión de clasificaciones y métricas y comprobación técnica, junto con los aportes del estudiante. El criterio de discrepancias resueltas no se marca como cumplido plenamente: E10 quedó sin acuerdo según el relato del estudiante.
+
+## TA-IND-01: Don Gerardo
+
+Borrador de siete páginas con quince requisitos, glosario, autoevaluación y tres capturas reales. Las pruebas de aceptación siguen pendientes. Fuentes, compilación reproducible y puntos de revisión: [TA-IND-01/README.md](TA-IND-01/README.md).

@@ -1,40 +1,35 @@
-# TA-IND-01
+# TA-IND-01: Don Gerardo
 
-## Sistema seleccionado
+Borrador de revisión construido con el relato del estudiante. No acredita autoría exclusiva, lectura personal de la norma ni pruebas de aceptación ejecutadas. El alcance de apoyo se declara en el informe.
 
-Don Gerardo, con alcance en pedidos y comandas de cocina. El estudiante indicó que lo desarrolló y vendió con apoyo de Claude. Falta registrar el sistema en el foro y comprobar que no se repita en el paralelo.
+## Archivos
 
-## Estado
+- `main.tex`, `referencias.bib`, `figuras/`: fuentes del informe.
+- `main.pdf`: informe compilado de siete páginas.
+- `REQUISITOS_BORRADOR.json`: quince requisitos con versión inicial, defecto, corrección, aceptación y origen.
+- `CONTEXTO_ESTUDIANTE.md`: respuestas aportadas por el estudiante.
+- `EVIDENCIAS.md`: origen, límites y hashes de las tres capturas reales.
+- `comprobante_SGA.pdf`: ficha de una página con enlace; no es recibo de entrega.
+- `VERIFICACION.md`: comprobación de compilación y límites.
 
-Actividad en preparación. El comprobante de una página no acredita que el informe esté completo ni que se haya enviado al SGA.
+## Compilación reproducible
 
-Pendientes: resumen analítico de autoría del estudiante, glosario de diez términos, quince requisitos de al menos cinco tipos (cinco de calidad), clasificación con criterios de aceptación, autoevaluación con versiones, reflexión y al menos tres capturas propias sin datos privados. La guía pide de cuatro a siete páginas de contenido y al menos tres fuentes; dos de ellas deben cumplir la antigüedad indicada por la rúbrica.
-
-La guía adjunta indica cierre el 7 de noviembre de 2026 a las 23:59. No se ha verificado la fecha de miércoles mencionada por el estudiante. Es necesario confirmar la fecha vigente en el SGA o con el docente.
-
-## Reconocimiento técnico de solo lectura
-
-Se localizaron métodos de guardar pedidos, obtener sus detalles, buscar pedidos y anular pedidos, además de una acción para solicitar reimpresión de comandas. Esto acredita la presencia de esas funciones en el código consultado, no una prueba de ejecución ni una medición de desempeño. No se inició la aplicación, no se crearon pedidos, no se imprimieron comandas y no se modificó la base de datos. No se copia código privado ni información operativa del restaurante a este repositorio académico.
-
-## Fuentes oficiales para la lectura
-
-- ISO/IEC/IEEE 29148:2018, ficha oficial: https://www.iso.org/standard/72089.html
-- Vista previa de ISO/IEC/IEEE 29148:2018: https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec-ieee%3A29148%3Aed-2%3Av1%3Aen
-- ISO/IEC 25010:2023, ficha oficial: https://www.iso.org/standard/78176.html
-- IEEE Computer Society, SWEBOK: https://www.computer.org/education/bodies-of-knowledge/software-engineering/v4
-
-Estos enlaces son un punto de partida. No se dan por verificadas las cláusulas del informe, ni sustituyen la lectura de la norma ni las referencias finales. La guía restringe el uso de IA a apoyo; no se presenta contenido redactado por IA como autoría exclusiva del estudiante.
-
-## Compilar el comprobante
-
-Desde la raíz del repositorio con Tectonic 0.17.0:
+Desde la raíz del repositorio, con PowerShell y Tectonic 0.17.0 disponible:
 
 ```powershell
-tectonic --keep-logs TA-IND-01/comprobante_SGA.tex
+powershell -File TA-IND-01/compilar.ps1
 ```
 
-La primera ejecución necesita conexión para descargar dependencias. Se comprobó la generación local de una página con la caché de la actividad anterior. El informe principal todavía no se ha creado.
+Para indicar el ejecutable o usar la caché ya descargada:
 
-## Capturas de interfaz disponibles
+```powershell
+powershell -File TA-IND-01/compilar.ps1 -Tectonic C:/herramientas/tectonic.exe -Offline
+```
 
-Se incorporaron tres capturas reales del acceso, formulario de inventario y toma de pedido. Ver EVIDENCIAS.md y figuras/. Los originales con nombres de cuenta o proveedores no se publican. Las capturas documentan interfaz, no mediciones ni pruebas de todos los comportamientos. El informe principal y la lectura y redacción del estudiante siguen pendientes.
+La primera compilación necesita Internet para descargar recursos. El script copia fuentes y figuras a un directorio temporal limpio, fija SOURCE_DATE_EPOCH y genera ambos PDF. Tectonic usa un motor basado en XeTeX y ejecuta BibTeX automáticamente; no se probó pdfLaTeX. Dependencias LaTeX: article, inputenc, fontenc, babel español, geometry, array, longtable, graphicx, hyperref e IEEEtran.bst. Se conserva el entorno y caché para repetir los hashes.
+
+## Revisión que queda al estudiante
+
+Leer y adaptar personalmente el resumen y la reflexión; consultar la norma por el acceso institucional. Confirmar el registro del sistema en el foro y que no se repita. Revisar con el dueño las propuestas R07, R08, R11 y R13 y las muestras y condiciones de prueba añadidas. Las pruebas se describen como criterios propuestos, no como resultados. Las capturas acreditan interfaz de escritorio, no la operación móvil ni rendimiento o seguridad.
+
+La guía compartida indica 7 de noviembre de 2026, 23:59. La fecha vigente del SGA no se comprobó. La entrega requiere revisión final del estudiante y subir únicamente el comprobante que corresponda al SGA.

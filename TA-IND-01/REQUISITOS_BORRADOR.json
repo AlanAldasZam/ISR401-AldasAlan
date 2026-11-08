@@ -1,0 +1,137 @@
+[
+  [
+    "R01",
+    "F",
+    "Los platos y la mesa.",
+    "Faltan cantidad y responsable (C).",
+    "El sistema deberá permitir al mesero registrar un pedido con una mesa, platos, cantidades enteras positivas y observaciones opcionales por plato.",
+    "Guardar 2 hamburguesas, una sin cebolla, para mesa 3; recuperar exactamente mesa, cantidad e indicación.",
+    "Relato"
+  ],
+  [
+    "R02",
+    "F",
+    "Que la comanda salga detallada.",
+    "Detallada es subjetivo (U,V).",
+    "Al enviar un pedido o una ronda no vacíos a cocina, el sistema deberá generar su comanda solo con las líneas enviadas, mesa, cantidades y observaciones agrupadas por área de preparación.",
+    "Comparar 3 pedidos de prueba con las comandas: coincidencia de datos y apartados de parrilla, moros o entradas cuando correspondan.",
+    "Relato"
+  ],
+  [
+    "R03",
+    "F",
+    "Solo lo nuevo, como nueva ronda.",
+    "No se identifica qué se conserva (C).",
+    "Al añadir una ronda a una mesa con pedido abierto, el sistema deberá incorporar su importe al saldo pendiente conservando los abonos anteriores.",
+    "Mesa con $5 pendientes: añadir $8 y comprobar saldo $13 y abonos anteriores sin cambios.",
+    "Relato"
+  ],
+  [
+    "R04",
+    "F",
+    "Se paga el plato de diez y queda cinco.",
+    "Falta identificar la operación (C).",
+    "El sistema deberá permitir al cajero registrar un abono por platos seleccionados y actualizar el saldo de la mesa descontando únicamente el importe de esos platos pendientes.",
+    "Con platos de $10 y $5, pagar el de $10; saldo $5 y sin permitir cobrar otra vez ese plato.",
+    "Relato"
+  ],
+  [
+    "R05",
+    "F",
+    "Reimprimir cuando se pierde.",
+    "No distingue original de copia (C).",
+    "Al solicitar una reimpresión de un pedido existente desde la app del mesero, el sistema deberá imprimir la misma comanda con la palabra COPIA en la parte superior.",
+    "Reimprimir una comanda: conservar su identificador y detalle, mostrar COPIA y no aumentar el saldo de la mesa.",
+    "Relato"
+  ],
+  [
+    "R06",
+    "F",
+    "Que no ofrezca un plato que se acabó.",
+    "Falta responsable y alcance (C).",
+    "El sistema deberá permitir al usuario autorizado de escritorio marcar un plato como no disponible e impedir que se agregue a nuevos pedidos después de actualizar el menú del mesero.",
+    "Deshabilitar un plato de prueba, actualizar el menú y verificar que no puede añadirse; no se modifican pedidos ya enviados.",
+    "Relato con alcance propuesto"
+  ],
+  [
+    "R07",
+    "I",
+    "Todo funciona por una API.",
+    "Describe tecnología sin datos de intercambio (C,V).",
+    "La interfaz entre móvil y caja deberá transportar el identificador de pedido y ronda, mesa, líneas de plato, cantidades y observaciones, y devolver confirmación asociada al mismo identificador.",
+    "Inspeccionar un mensaje de prueba y su confirmación: todos los campos presentes, misma mesa e identificador en ambos extremos.",
+    "Propuesta de contrato"
+  ],
+  [
+    "R08",
+    "P",
+    "Actualizar conforme pide el dueño.",
+    "No fija cuándo se valida (C,V).",
+    "Antes de publicar un cambio del formato de comanda, el responsable del desarrollo deberá registrar la revisión del dueño sobre un ejemplo sin datos de clientes y conservar su aceptación o sus correcciones.",
+    "Para un cambio, inspeccionar ejemplo, fecha y respuesta real del dueño antes de liberar la versión; no fabricar aceptación.",
+    "Propuesta de proceso"
+  ],
+  [
+    "R09",
+    "Q",
+    "De dos a tres segundos.",
+    "No distingue inicio, final ni cola (U,C).",
+    "Con red local estable e impresora térmica libre, encendida y con papel, la impresión deberá comenzar como máximo 3 segundos después de Enviar a cocina para pedidos de hasta 30 líneas de productos.",
+    "30 envíos separados, alternando teléfono y tablet: 30/30 inicios en tiempo menor o igual a 3 s. Medir desde pulsación hasta movimiento de papel. ISO: eficiencia de desempeño, comportamiento temporal.",
+    "Límite del estudiante; condiciones propuestas"
+  ],
+  [
+    "R10",
+    "Q",
+    "Que no imprima dos veces.",
+    "No distingue reintento y copia solicitada (U).",
+    "El sistema deberá mantener una sola comanda original por identificador de pedido y ronda ante reintentos del mismo envío, sin impedir reimpresiones marcadas como COPIA.",
+    "30 pedidos, repetir 3 veces cada envío: 30 originales y cero duplicados accidentales. Excluir las copias solicitadas. ISO: fiabilidad, tolerancia a fallos.",
+    "Necesidad relatada; prueba propuesta"
+  ],
+  [
+    "R11",
+    "Q",
+    "Conserva el pedido y al reconectar imprime.",
+    "No delimita qué conexión ni alcance (U,C).",
+    "El sistema deberá recuperar el 100 por ciento de los pedidos ya guardados en la cola de impresión de caja tras una interrupción de comunicación con la impresora, sin alterar sus datos.",
+    "En entorno aislado, dejar 10 comandas en cola, cortar y restablecer la comunicación: recuperar 10/10, datos iguales y ningún original extra. Sin plazo de recuperación afirmado. ISO: fiabilidad, recuperabilidad.",
+    "Propuesta; no acredita operación móvil sin wifi"
+  ],
+  [
+    "R12",
+    "Q",
+    "Los meseros no entran a caja.",
+    "Ocultar pantalla no acredita permisos (V).",
+    "El sistema deberá rechazar el 100 por ciento de los intentos de modificar precios o registrar cobros realizados con cuentas de mesero, conservando precios y saldos sin cambios.",
+    "20 intentos de cada operación con mesero, tanto por interfaz como por API si la operación se expone: 40/40 rechazados. ISO: seguridad, integridad.",
+    "Permisos relatados; prueba propuesta"
+  ],
+  [
+    "R13",
+    "U",
+    "Que sea cómodo para el mesero.",
+    "Cómodo es subjetivo (U,V).",
+    "En una prueba de primer uso, al menos 4 de 5 participantes con tareas de mesero deberán registrar y enviar un pedido de tres platos para una mesa, con una observación, sin ayuda externa en un máximo de 2 minutos.",
+    "Éxitos correctos sin ayuda y en tiempo / 5, mínimo 80 por ciento; medir desde menú inicial con sesión hasta confirmación. Registrar fallos y abandonos. ISO orientativa: capacidad de interacción, aprendizaje.",
+    "Propuesta de evaluación; participantes no reclutados"
+  ],
+  [
+    "R14",
+    "Q",
+    "Que los pedidos no se mezclen.",
+    "No define comparación ni muestra (C,V).",
+    "El intercambio entre móvil y caja deberá conservar el 100 por ciento de los identificadores, mesas, platos, cantidades y observaciones de cada pedido confirmado, incluidos envíos cercanos de los dos dispositivos.",
+    "30 pares de pedidos de mesas distintas desde teléfono y tablet; 60/60 registros iguales a origen y cero líneas asignadas a otra mesa. ISO: compatibilidad, interoperabilidad.",
+    "Necesidad relatada; prueba propuesta"
+  ],
+  [
+    "R15",
+    "F",
+    "Que todo esté validado en inventario.",
+    "Todo no identifica la regla (U,V).",
+    "Al registrar una salida manual de un insumo, el sistema deberá aceptar solo una cantidad positiva no mayor a la existencia disponible y conservar la existencia anterior cuando rechace la operación.",
+    "Con 5 litros, intentar salida de 8 y de -1: rechazar y conservar 5; registrar salida de 2: existencia 3.",
+    "Confirmación verbal; no prueba ejecutada"
+  ]
+]
